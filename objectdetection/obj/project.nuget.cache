@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "dgSpecHash": "N+hVlFECd9I5N8y40/jp9n/RULFidK0AXvijamInGaQ776COGBIKt23wAgaWsBN/3YF1pBHhRiXopCUwZEEXWQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ajmer\\Downloads\\objectdetection\\objectdetection\\objectdetection.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ajmer\\.nuget\\packages\\emgu.cv\\3.3.0.2824\\emgu.cv.3.3.0.2824.nupkg.sha512",
+    "C:\\Users\\ajmer\\.nuget\\packages\\emgu.cv.bitmap\\4.6.0.5131\\emgu.cv.bitmap.4.6.0.5131.nupkg.sha512",
+    "C:\\Users\\ajmer\\.nuget\\packages\\emgu.cv.runtime.windows\\4.6.0.5131\\emgu.cv.runtime.windows.4.6.0.5131.nupkg.sha512",
+    "C:\\Users\\ajmer\\.nuget\\packages\\emgu.runtime.windows.msvc.rt.arm64\\19.33.31630\\emgu.runtime.windows.msvc.rt.arm64.19.33.31630.nupkg.sha512",
+    "C:\\Users\\ajmer\\.nuget\\packages\\emgu.runtime.windows.msvc.rt.x64\\19.33.31630\\emgu.runtime.windows.msvc.rt.x64.19.33.31630.nupkg.sha512",
+    "C:\\Users\\ajmer\\.nuget\\packages\\emgu.runtime.windows.msvc.rt.x86\\19.33.31630\\emgu.runtime.windows.msvc.rt.x86.19.33.31630.nupkg.sha512",
+    "C:\\Users\\ajmer\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\ajmer\\.nuget\\packages\\zedgraph\\5.1.5\\zedgraph.5.1.5.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Emgu.CV from 4.6.0.5131 to 3.3.0.2824. Reference the package directly from the project to select a different version. \r\n objectdetection -> Emgu.CV.Bitmap 4.6.0.5131 -> Emgu.CV (>= 4.6.0.5131) \r\n objectdetection -> EMGU.CV (>= 3.3.0.2824)",
+      "libraryId": "Emgu.CV",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Emgu.CV from 4.6.0.5131 to 3.3.0.2824. Reference the package directly from the project to select a different version. \r\n objectdetection -> Emgu.CV.runtime.windows 4.6.0.5131 -> Emgu.CV (>= 4.6.0.5131) \r\n objectdetection -> EMGU.CV (>= 3.3.0.2824)",
+      "libraryId": "Emgu.CV",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
+}

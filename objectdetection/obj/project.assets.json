@@ -1,0 +1,734 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "EMGU.CV/3.3.0.2824": {
+        "type": "package",
+        "dependencies": {
+          "ZedGraph": "5.1.5"
+        },
+        "compile": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "build": {
+          "build/Emgu.CV.targets": {}
+        }
+      },
+      "Emgu.CV.Bitmap/4.6.0.5131": {
+        "type": "package",
+        "dependencies": {
+          "Emgu.CV": "4.6.0.5131",
+          "System.Drawing.Common": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
+        }
+      },
+      "Emgu.CV.runtime.windows/4.6.0.5131": {
+        "type": "package",
+        "dependencies": {
+          "Emgu.CV": "4.6.0.5131",
+          "Emgu.runtime.windows.msvc.rt.arm64": "19.33.31630",
+          "Emgu.runtime.windows.msvc.rt.x64": "19.33.31630",
+          "Emgu.runtime.windows.msvc.rt.x86": "19.33.31630"
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/cvextern.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/cvextern.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg460_64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/cvextern.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg460.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Emgu.runtime.windows.msvc.rt.arm64/19.33.31630": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/concrt140.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-arm64/native/msvcp140.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-arm64/native/msvcp140_1.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-arm64/native/msvcp140_2.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-arm64/native/msvcp140_atomic_wait.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-arm64/native/msvcp140_codecvt_ids.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-arm64/native/vcruntime140.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-arm64/native/vcruntime140_1.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          }
+        }
+      },
+      "Emgu.runtime.windows.msvc.rt.x64/19.33.31630": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-x64/native/concrt140.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/msvcp140.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/msvcp140_1.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/msvcp140_2.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/msvcp140_atomic_wait.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/msvcp140_codecvt_ids.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/vcruntime140.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/vcruntime140_1.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "Emgu.runtime.windows.msvc.rt.x86/19.33.31630": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win-x86/native/concrt140.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/msvcp140.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/msvcp140_1.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/msvcp140_2.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/msvcp140_atomic_wait.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/msvcp140_codecvt_ids.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/vcruntime140.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "System.Drawing.Common/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Drawing.Common.dll": {}
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "ZedGraph/5.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/ZedGraph.dll": {}
+        },
+        "runtime": {
+          "lib/ZedGraph.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "EMGU.CV/3.3.0.2824": {
+        "type": "package",
+        "dependencies": {
+          "ZedGraph": "5.1.5"
+        },
+        "compile": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "build": {
+          "build/Emgu.CV.targets": {}
+        }
+      },
+      "Emgu.CV.Bitmap/4.6.0.5131": {
+        "type": "package",
+        "dependencies": {
+          "Emgu.CV": "4.6.0.5131",
+          "System.Drawing.Common": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
+        }
+      },
+      "Emgu.CV.runtime.windows/4.6.0.5131": {
+        "type": "package",
+        "dependencies": {
+          "Emgu.CV": "4.6.0.5131",
+          "Emgu.runtime.windows.msvc.rt.arm64": "19.33.31630",
+          "Emgu.runtime.windows.msvc.rt.x64": "19.33.31630",
+          "Emgu.runtime.windows.msvc.rt.x86": "19.33.31630"
+        }
+      },
+      "Emgu.runtime.windows.msvc.rt.arm64/19.33.31630": {
+        "type": "package"
+      },
+      "Emgu.runtime.windows.msvc.rt.x64/19.33.31630": {
+        "type": "package"
+      },
+      "Emgu.runtime.windows.msvc.rt.x86/19.33.31630": {
+        "type": "package"
+      },
+      "System.Drawing.Common/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Drawing.Common.dll": {}
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "ZedGraph/5.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/ZedGraph.dll": {}
+        },
+        "runtime": {
+          "lib/ZedGraph.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "EMGU.CV/3.3.0.2824": {
+        "type": "package",
+        "dependencies": {
+          "ZedGraph": "5.1.5"
+        },
+        "compile": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "build": {
+          "build/Emgu.CV.targets": {}
+        }
+      },
+      "Emgu.CV.Bitmap/4.6.0.5131": {
+        "type": "package",
+        "dependencies": {
+          "Emgu.CV": "4.6.0.5131",
+          "System.Drawing.Common": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
+        }
+      },
+      "Emgu.CV.runtime.windows/4.6.0.5131": {
+        "type": "package",
+        "dependencies": {
+          "Emgu.CV": "4.6.0.5131",
+          "Emgu.runtime.windows.msvc.rt.arm64": "19.33.31630",
+          "Emgu.runtime.windows.msvc.rt.x64": "19.33.31630",
+          "Emgu.runtime.windows.msvc.rt.x86": "19.33.31630"
+        },
+        "native": {
+          "runtimes/win-x64/native/cvextern.dll": {},
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg460_64.dll": {}
+        }
+      },
+      "Emgu.runtime.windows.msvc.rt.arm64/19.33.31630": {
+        "type": "package"
+      },
+      "Emgu.runtime.windows.msvc.rt.x64/19.33.31630": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x64/native/concrt140.dll": {},
+          "runtimes/win-x64/native/msvcp140.dll": {},
+          "runtimes/win-x64/native/msvcp140_1.dll": {},
+          "runtimes/win-x64/native/msvcp140_2.dll": {},
+          "runtimes/win-x64/native/msvcp140_atomic_wait.dll": {},
+          "runtimes/win-x64/native/msvcp140_codecvt_ids.dll": {},
+          "runtimes/win-x64/native/vcruntime140.dll": {},
+          "runtimes/win-x64/native/vcruntime140_1.dll": {}
+        }
+      },
+      "Emgu.runtime.windows.msvc.rt.x86/19.33.31630": {
+        "type": "package"
+      },
+      "System.Drawing.Common/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Drawing.Common.dll": {}
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "ZedGraph/5.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/ZedGraph.dll": {}
+        },
+        "runtime": {
+          "lib/ZedGraph.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "EMGU.CV/3.3.0.2824": {
+        "type": "package",
+        "dependencies": {
+          "ZedGraph": "5.1.5"
+        },
+        "compile": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "runtime": {
+          "lib/net35/Emgu.CV.UI.dll": {},
+          "lib/net35/Emgu.CV.World.dll": {}
+        },
+        "build": {
+          "build/Emgu.CV.targets": {}
+        }
+      },
+      "Emgu.CV.Bitmap/4.6.0.5131": {
+        "type": "package",
+        "dependencies": {
+          "Emgu.CV": "4.6.0.5131",
+          "System.Drawing.Common": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Emgu.CV.Bitmap.dll": {}
+        }
+      },
+      "Emgu.CV.runtime.windows/4.6.0.5131": {
+        "type": "package",
+        "dependencies": {
+          "Emgu.CV": "4.6.0.5131",
+          "Emgu.runtime.windows.msvc.rt.arm64": "19.33.31630",
+          "Emgu.runtime.windows.msvc.rt.x64": "19.33.31630",
+          "Emgu.runtime.windows.msvc.rt.x86": "19.33.31630"
+        },
+        "native": {
+          "runtimes/win-x86/native/cvextern.dll": {},
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg460.dll": {}
+        }
+      },
+      "Emgu.runtime.windows.msvc.rt.arm64/19.33.31630": {
+        "type": "package"
+      },
+      "Emgu.runtime.windows.msvc.rt.x64/19.33.31630": {
+        "type": "package"
+      },
+      "Emgu.runtime.windows.msvc.rt.x86/19.33.31630": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x86/native/concrt140.dll": {},
+          "runtimes/win-x86/native/msvcp140.dll": {},
+          "runtimes/win-x86/native/msvcp140_1.dll": {},
+          "runtimes/win-x86/native/msvcp140_2.dll": {},
+          "runtimes/win-x86/native/msvcp140_atomic_wait.dll": {},
+          "runtimes/win-x86/native/msvcp140_codecvt_ids.dll": {},
+          "runtimes/win-x86/native/vcruntime140.dll": {}
+        }
+      },
+      "System.Drawing.Common/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net462/System.Drawing.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net462/System.Drawing.Common.dll": {}
+        },
+        "build": {
+          "buildTransitive/net462/_._": {}
+        }
+      },
+      "ZedGraph/5.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/ZedGraph.dll": {}
+        },
+        "runtime": {
+          "lib/ZedGraph.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EMGU.CV/3.3.0.2824": {
+      "sha512": "eDx1zPPtHFstB2K86UD+79Mjdr/w4jBLTzo/ZJRxA3I47uQSXkzP2XGq1PsmUmD/LqAqle2EY1e28azlEoKrXg==",
+      "type": "package",
+      "path": "emgu.cv/3.3.0.2824",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Emgu.CV.targets",
+        "build/x64/concrt140.dll",
+        "build/x64/cvextern.dll",
+        "build/x64/msvcp140.dll",
+        "build/x64/opencv_ffmpeg330_64.dll",
+        "build/x64/vcruntime140.dll",
+        "build/x86/concrt140.dll",
+        "build/x86/cvextern.dll",
+        "build/x86/msvcp140.dll",
+        "build/x86/opencv_ffmpeg330.dll",
+        "build/x86/vcruntime140.dll",
+        "emgu.cv.3.3.0.2824.nupkg.sha512",
+        "emgu.cv.nuspec",
+        "lib/net35/Emgu.CV.UI.dll",
+        "lib/net35/Emgu.CV.UI.xml",
+        "lib/net35/Emgu.CV.World.dll",
+        "lib/net35/Emgu.CV.World.xml"
+      ]
+    },
+    "Emgu.CV.Bitmap/4.6.0.5131": {
+      "sha512": "T+Gm73BlAd+88BpMf8qpWtG5oX/a8/J3GIsYYKJsrcYtj6IWC15vBu8BXeasseZpdDNFfSmOrKJVWDEG1G9ICQ==",
+      "type": "package",
+      "path": "emgu.cv.bitmap/4.6.0.5131",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "docs/README.md",
+        "emgu.cv.bitmap.4.6.0.5131.nupkg.sha512",
+        "emgu.cv.bitmap.nuspec",
+        "lib/netstandard2.0/Emgu.CV.Bitmap.dll",
+        "lib/netstandard2.0/Emgu.CV.Bitmap.xml",
+        "nuget_icon.png"
+      ]
+    },
+    "Emgu.CV.runtime.windows/4.6.0.5131": {
+      "sha512": "YAybhlr28ETP2Uv7j1Wg4cxF5CJfgbOT3FQ9602ZY0kZgJKV3qDaUn6ZdUMalO5HocU9czCxHEwHhQH+645XZQ==",
+      "type": "package",
+      "path": "emgu.cv.runtime.windows/4.6.0.5131",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "docs/README.md",
+        "docs/build_info_arm64.inc",
+        "docs/build_info_x64.inc",
+        "docs/build_info_x86.inc",
+        "emgu.cv.runtime.windows.4.6.0.5131.nupkg.sha512",
+        "emgu.cv.runtime.windows.nuspec",
+        "icon.png",
+        "runtimes/win-arm64/native/cvextern.dll",
+        "runtimes/win-x64/native/cvextern.dll",
+        "runtimes/win-x64/native/opencv_videoio_ffmpeg460_64.dll",
+        "runtimes/win-x86/native/cvextern.dll",
+        "runtimes/win-x86/native/opencv_videoio_ffmpeg460.dll"
+      ]
+    },
+    "Emgu.runtime.windows.msvc.rt.arm64/19.33.31630": {
+      "sha512": "Pbu8A7ghkM9HeKSS012SYvrejpj3Hpo5JKF3NaQ+0klv3cu47gbt2W+RaEhcXZZWelPmvgweXBjSVTef0HfTrw==",
+      "type": "package",
+      "path": "emgu.runtime.windows.msvc.rt.arm64/19.33.31630",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "emgu.runtime.windows.msvc.rt.arm64.19.33.31630.nupkg.sha512",
+        "emgu.runtime.windows.msvc.rt.arm64.nuspec",
+        "icon.png",
+        "runtimes/win-arm64/native/concrt140.dll",
+        "runtimes/win-arm64/native/msvcp140.dll",
+        "runtimes/win-arm64/native/msvcp140_1.dll",
+        "runtimes/win-arm64/native/msvcp140_2.dll",
+        "runtimes/win-arm64/native/msvcp140_atomic_wait.dll",
+        "runtimes/win-arm64/native/msvcp140_codecvt_ids.dll",
+        "runtimes/win-arm64/native/vcruntime140.dll",
+        "runtimes/win-arm64/native/vcruntime140_1.dll"
+      ]
+    },
+    "Emgu.runtime.windows.msvc.rt.x64/19.33.31630": {
+      "sha512": "sBIDz7mLJgYKgmut7WNwuCG5/+VTwsf+Oubd430QfdF4bgJPJoUCQ7P9OKvTvqQo1t95DpgdyjxNloDVCGUIFQ==",
+      "type": "package",
+      "path": "emgu.runtime.windows.msvc.rt.x64/19.33.31630",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "emgu.runtime.windows.msvc.rt.x64.19.33.31630.nupkg.sha512",
+        "emgu.runtime.windows.msvc.rt.x64.nuspec",
+        "icon.png",
+        "runtimes/win-x64/native/concrt140.dll",
+        "runtimes/win-x64/native/msvcp140.dll",
+        "runtimes/win-x64/native/msvcp140_1.dll",
+        "runtimes/win-x64/native/msvcp140_2.dll",
+        "runtimes/win-x64/native/msvcp140_atomic_wait.dll",
+        "runtimes/win-x64/native/msvcp140_codecvt_ids.dll",
+        "runtimes/win-x64/native/vcruntime140.dll",
+        "runtimes/win-x64/native/vcruntime140_1.dll"
+      ]
+    },
+    "Emgu.runtime.windows.msvc.rt.x86/19.33.31630": {
+      "sha512": "Jwqm4yrJRDWs4rUmcpwUVvDuISRgp6WJvCX/n1rTy52GjnWKvzTYOPvhKiAH2alB/bBGbNhyP5UvmhUeN3dOXw==",
+      "type": "package",
+      "path": "emgu.runtime.windows.msvc.rt.x86/19.33.31630",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "emgu.runtime.windows.msvc.rt.x86.19.33.31630.nupkg.sha512",
+        "emgu.runtime.windows.msvc.rt.x86.nuspec",
+        "icon.png",
+        "runtimes/win-x86/native/concrt140.dll",
+        "runtimes/win-x86/native/msvcp140.dll",
+        "runtimes/win-x86/native/msvcp140_1.dll",
+        "runtimes/win-x86/native/msvcp140_2.dll",
+        "runtimes/win-x86/native/msvcp140_atomic_wait.dll",
+        "runtimes/win-x86/native/msvcp140_codecvt_ids.dll",
+        "runtimes/win-x86/native/vcruntime140.dll"
+      ]
+    },
+    "System.Drawing.Common/7.0.0": {
+      "sha512": "KIX+oBU38pxkKPxvLcLfIkOV5Ien8ReN78wro7OF5/erwcmortzeFx+iBswlh2Vz6gVne0khocQudGwaO1Ey6A==",
+      "type": "package",
+      "path": "system.drawing.common/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Drawing.Common.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/System.Drawing.Common.dll",
+        "lib/net462/System.Drawing.Common.xml",
+        "lib/net6.0/System.Drawing.Common.dll",
+        "lib/net6.0/System.Drawing.Common.xml",
+        "lib/net7.0/System.Drawing.Common.dll",
+        "lib/net7.0/System.Drawing.Common.xml",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "runtimes/win/lib/net6.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/net6.0/System.Drawing.Common.xml",
+        "runtimes/win/lib/net7.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/net7.0/System.Drawing.Common.xml",
+        "system.drawing.common.7.0.0.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "ZedGraph/5.1.5": {
+      "sha512": "CclJINtatXbtBS2r4FFMPaGuwokmk5OlBnuW+QN5+d/CST0fv2N88pm8c3rIoOkXMiWvWArE+Jz1d2WA0QPoDQ==",
+      "type": "package",
+      "path": "zedgraph/5.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-LGPL.txt",
+        "lib/ZedGraph.XML",
+        "lib/ZedGraph.dll",
+        "lib/de/ZedGraph.resources.dll",
+        "lib/es/ZedGraph.resources.dll",
+        "lib/fr/ZedGraph.resources.dll",
+        "lib/hu/ZedGraph.resources.dll",
+        "lib/it/ZedGraph.resources.dll",
+        "lib/ja/ZedGraph.resources.dll",
+        "lib/pt/ZedGraph.resources.dll",
+        "lib/ru/ZedGraph.resources.dll",
+        "lib/sk/ZedGraph.resources.dll",
+        "lib/sv/ZedGraph.resources.dll",
+        "lib/tr/ZedGraph.resources.dll",
+        "lib/zh-cn/ZedGraph.resources.dll",
+        "lib/zh-tw/ZedGraph.resources.dll",
+        "readme.txt",
+        "zedgraph.5.1.5.nupkg.sha512",
+        "zedgraph.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "Emgu.CV >= 3.3.0.2824",
+      "Emgu.CV.Bitmap >= 4.6.0.5131",
+      "Emgu.CV.runtime.windows >= 4.6.0.5131",
+      "System.Drawing.Common >= 7.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ajmer\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\ajmer\\Downloads\\objectdetection\\objectdetection\\objectdetection.csproj",
+      "projectName": "objectdetection",
+      "projectPath": "C:\\Users\\ajmer\\Downloads\\objectdetection\\objectdetection\\objectdetection.csproj",
+      "packagesPath": "C:\\Users\\ajmer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ajmer\\Downloads\\objectdetection\\objectdetection\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\ajmer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "Emgu.CV": {
+            "target": "Package",
+            "version": "[3.3.0.2824, )"
+          },
+          "Emgu.CV.Bitmap": {
+            "target": "Package",
+            "version": "[4.6.0.5131, )"
+          },
+          "Emgu.CV.runtime.windows": {
+            "target": "Package",
+            "version": "[4.6.0.5131, )"
+          },
+          "System.Drawing.Common": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Emgu.CV from 4.6.0.5131 to 3.3.0.2824. Reference the package directly from the project to select a different version. \r\n objectdetection -> Emgu.CV.Bitmap 4.6.0.5131 -> Emgu.CV (>= 4.6.0.5131) \r\n objectdetection -> EMGU.CV (>= 3.3.0.2824)",
+      "libraryId": "Emgu.CV",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Emgu.CV from 4.6.0.5131 to 3.3.0.2824. Reference the package directly from the project to select a different version. \r\n objectdetection -> Emgu.CV.runtime.windows 4.6.0.5131 -> Emgu.CV (>= 4.6.0.5131) \r\n objectdetection -> EMGU.CV (>= 3.3.0.2824)",
+      "libraryId": "Emgu.CV",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
+}
